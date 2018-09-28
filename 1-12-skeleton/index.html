@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Weather App for UD811">
   <title>Weather</title>
-  <!-- Insert link to stylesheet here -->
+
+  <link rel="stylesheet" type="text/css" href="/styles/ud811.css">
 </head>
+
 <body>
 
   <header class="header">
@@ -141,8 +144,13 @@
       <circle id="ud811Spinner" cx="16" cy="16" r="14" fill="none"></circle>
     </svg>
   </div>
-
-  <!-- Insert link to app.js here -->
   
+
+  <script src="https://cdn.rawgit.com/mozilla/localForage/master/dist/localforage.js"> </script>
+  
+  <script type="module" src="/scripts/data.js"> </script>
+  <script type="module" src="/scripts/app.js"> </script>
+
 </body>
+
 </html>
